@@ -40,6 +40,26 @@ Where:
     *   Calculate the maximum change in `V(s)` across all states during the current iteration.
 3.  **Convergence:** Stop iterating when the maximum change in `V(s)` is less than a predefined threshold (1e-4 in this project).
 
+## Output
+
+Running and Final Value Function output
+
+```
+Starting...
+Iteration 100, max change: 0.16564811116836609
+Iteration 200, max change: 0.0223975903278415
+Iteration 300, max change: 0.003028419997747278
+Iteration 400, max change: 0.0004094783210462083
+Done after 471 iterations
+
+Final values:
+[[-59.42367735 -57.42387125 -54.2813141  -51.71012579]
+ [-57.42387125 -54.56699476 -49.71029394 -45.13926711]
+ [-54.2813141  -49.71029394 -40.85391609 -29.99766609]
+ [-51.71012579 -45.13926711 -29.99766609   0.        ]]
+```
+
+
 ## Further Improvements
 
 *   Implement policy extraction to determine the optimal policy based on the calculated value function.
